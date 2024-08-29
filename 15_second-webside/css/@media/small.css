@@ -1,0 +1,24 @@
+/* min-width: 576px; */
+.header-img{
+    background-image: url('/img/header/wolves_1280.jpg');
+}
+
+.first-product{
+    background-image: url('/img/main/children/children_1280.jpg');
+}
+
+.second-product{
+    background-image: url('/img/main/keyboard/keyboard_1280.jpg');
+}
+
+.third-product{
+    background-image: url('/img/main/apple/apple_1280.jpg');
+}
+
+.fourth-product{
+    background-image: url('/img/main/laptop/laptop_1280.jpg');
+}
+
+footer{
+    font-size: 16px;
+}

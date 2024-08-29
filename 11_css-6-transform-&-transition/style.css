@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #333;
+}
+
+div{
+    border: 1px solid black;
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+    line-height: 35px;
+}
+
+.long{
+    background-color: tomato;
+    width: 800px;
+    height: 35px;
+    top: 50px;
+    left: calc(50% - 400px);
+    transition: 1s;
+}
+
+.short{
+    background-color: royalblue;
+    width: 300px;
+    height: 35px;
+    top: 100px;
+    left: calc(50% - 150px);
+    border-radius: 25px;
+    transition: 1s linear;
+}
+
+.short2{
+    background-color: yellow;
+    width: 300px;
+    height: 35px;
+    top: 150px;
+    left: calc(25% - 150px);
+    transition: transform 1s ease-out 1s;
+    border-radius: 10px;
+}
+
+.short3{
+    background-color: lightgreen;
+    width: 300px;
+    height: 35px;
+    top: 150px;
+    left: calc(75% - 150px);
+    transition: transform 1s  cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+    border-radius: 10px;
+}
+
+.center{
+    background: none;
+    height: 200px;
+    width: 400px;
+    line-height: 200px;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    color: white;
+}
+
+.long:hover{
+    transform: scale(1.5) rotateY(60deg);
+    /* left: calc(50% - 150px); */
+    background-color: yellow;
+}
+
+.short:hover{
+    transform: rotateZ(360deg);
+}
+
+.short:hover ~ .short2, .short:hover ~ .short3{
+    transform: rotateZ(360deg);
+}
+
+.center:hover{
+    background-color: #fff;
+    color: black;
+}
+

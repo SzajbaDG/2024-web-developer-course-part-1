@@ -1,0 +1,30 @@
+/* min-width: 992px; */
+.header-img{
+    background-image: url('/img/header/wolves_1920.jpg');
+    background-size: cover;
+}
+
+.first-product{
+    background-image: url('/img/main/children/children_1920.jpg');
+    background-size: cover;
+}
+
+.second-product{
+    background-image: url('/img/main/keyboard/keyboard_1920.jpg');
+    background-size: cover;
+}
+
+.third-product{
+    background-image: url('/img/main/apple/apple_1920.jpg');
+    background-size: cover;
+}
+
+.fourth-product{
+    background-image: url('/img/main/laptop/laptop_1920.jpg');
+    background-size: cover;
+}
+
+/* MAIN */
+.main-product{
+    width: 50%;
+}

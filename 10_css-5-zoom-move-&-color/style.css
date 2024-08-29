@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    color: white;
+    background-color: #333;
+}
+
+button{
+    width: 120px;
+    position: absolute;
+    top: 30px;
+    padding: 10px 30px;
+    background: none;
+    /* background-color: transparent; - zamiast "none" */
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.8s;
+    transform: translateX(-50%);
+}
+.btn-zoom{
+    left: 30%;
+    /* left: calc(30% - 60px); */
+}
+
+.btn-move{
+    left: 50%;
+    /* left: calc(50% - 60px); */
+}
+
+.btn-color{
+    left: 70%;
+    /* left: calc(70% - 60px); */
+}
+
+.square{
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 120px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 0.8s;
+}
+
+.red{
+    background-color: rgb(255,0,0);
+    box-shadow: 5px 5px 15px rgb(255,0,0);
+    border: 1px solid rgb(150,0,0);
+    position: absolute;
+    left: 30%;
+    /* left: calc(30% - 50px); */
+}
+
+.blue{
+    background-color: rgb(0, 0, 255);
+    box-shadow: 5px 5px 15px rgb(0, 0, 255);
+    border: 1px solid rgb(0,0,150);
+    position: absolute;
+    left: 50%;
+    /* left: calc(50% - 50px); */
+}
+
+.green{
+    background-color: rgb(0, 255, 0);
+    box-shadow: 5px 5px 15px rgb(0,255,0);
+    border: 1px solid rgb(0,150,0);
+    position: absolute;
+    left: 70%;
+    /* left: calc(70% - 50px); */
+}
+
+button:hover{
+    background-color: white;
+    color:black;
+}
+
+.btn-zoom:hover ~ .square{
+    width: 150px;
+    height: 150px;
+}
+
+.btn-move:hover ~ .square{
+    top:30%;
+}
+
+.btn-color:hover ~ .square{
+    background-color: black;
+    box-shadow: 3px 3px 15px 5px  black;
+    border: 1px solid white;
+
+    /* fajna opcja zamiast powyższych:
+    left: calc(70% - 10px); */
+}
